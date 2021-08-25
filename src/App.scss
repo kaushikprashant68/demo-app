@@ -1,0 +1,178 @@
+*, body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.d-flex{
+  display: flex;
+}
+
+.a-center{
+  align-items: center;
+}
+
+.j-center{
+  justify-content: center;
+}
+
+.pb-15{
+  padding-bottom: 15px !important;
+}
+
+.m-5{
+  margin:5px;
+}
+
+// User Add Form
+.add-user{
+  text-align: center;
+  padding: 60px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 20px 0px rgb(0 0 0 / 30%);
+  width: 100%;
+  display: inline-block;
+  margin: 50px 0;
+  border-radius: 8px;
+  .cus-form-fields{
+    width: 100%;
+    display: inline-block;
+    ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      width: 100%;
+      display: inline-block;
+      li{
+        width: 100%;
+        display: inline-block;
+        margin-bottom: 12px;
+        label{
+          width: 100%;
+          display: inline-block;
+          text-align: left;
+          font-size: 16px;
+          margin-bottom: 12px;
+        }
+        .cus-chip{
+          width: 100%;
+          height: 55px;
+          padding: 10px 12px;
+        }
+        .WAMuiChipInput-underline-18:before {
+          border: 1px solid rgba(0, 0, 0, 0.23);
+          pointer-events: none;
+          height: 100%;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+  .cus-btn-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    button {
+      width: 150px;
+      height: 50px;
+      font-size: 16px;
+      font-weight: 700;
+      margin: 10px;
+      box-shadow: none;
+    }
+  }
+}
+.cus-grids {
+  text-align: center;
+  padding: 60px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 20px 0px rgb(0 0 0 / 30%);
+  width: 100%;
+  display: inline-block;
+  margin: 50px 0 0;
+  border-radius: 8px;
+  .cus-card-listing {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    background-color: #eee;
+    box-shadow: 0 0 9px #dadada;
+    border: 1px solid #e0e0e0;
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 16px;
+      color: #666;
+    }
+    .action-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
+.cus-chart{
+  text-align: center;
+  padding: 60px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 20px 0px rgb(0 0 0 / 30%);
+  width: 100%;
+  display: inline-block;
+  margin: 50px 0 50px;
+  border-radius: 8px;
+}
+
+.edit-user{
+  [class^=makeStyles-paper-] {
+    width: 800px;
+    border: none; 
+    .add-user{
+      padding: 0;
+      box-shadow: none;
+    }
+  }
+}
